@@ -22,7 +22,7 @@ android {
 }
 
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.gsteVahid'
+group = 'com.github.gateVahid'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
