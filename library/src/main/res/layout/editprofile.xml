@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/editprofile_edittext"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editprofile_edittext_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -18,7 +19,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editprofile_edittext_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -29,7 +30,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/editprofile_edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -40,7 +41,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editprofile_edittext_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -51,7 +52,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/editprofile_edittext_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -62,7 +63,7 @@
         android:inputType="phone" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/editprofile_button_passchange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -78,13 +79,13 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/editprofile_button_signout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button_round_signout"
         android:padding="4dp"
-        android:text="ثبت"
+        android:text="خروج"
         android:textColor="@color/color_white"
         android:textSize="18sp" />
 
