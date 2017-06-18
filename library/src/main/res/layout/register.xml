@@ -12,7 +12,7 @@
         android:layout_weight=".5" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/register_edittext_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -27,7 +27,7 @@
         android:padding="8dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/register_edittext_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -42,7 +42,7 @@
         android:padding="8dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/register_edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -62,7 +62,7 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/register_button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
