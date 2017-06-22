@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -19,6 +20,8 @@ public class Login extends LinearLayout {
     public Login (Context c){
         super(c);
         LayoutInflater.from(c).inflate(R.layout.login,this);
+        setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
 
         user = (EditText)findViewById(R.id.login_edittext_username);
         pass = (EditText)findViewById(R.id.login_edittext_password);

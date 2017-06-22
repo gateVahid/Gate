@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -18,6 +19,8 @@ public class Register extends LinearLayout {
     public Register (Context c){
         super(c);
         LayoutInflater.from(c).inflate(R.layout.register,this);
+        setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
 
         user =(EditText)findViewById(R.id.register_edittext_username);
         pass =(EditText)findViewById(R.id.register_edittext_password);

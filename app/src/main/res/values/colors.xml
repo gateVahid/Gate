@@ -14,5 +14,7 @@
     <color name="color_white_trans">#80ffffff</color>
     <color name="color_white_background">#f0f0f0</color>
     <color name="color_white_edittext">#fff</color>
+    <color name="color_darkwhite_background">#f3f3f3</color>
+
 
 </resources>
