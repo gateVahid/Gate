@@ -6,22 +6,12 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight=".5" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight=".5"
-        android:elevation="2dp" />
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gate_primary" />
 
     <EditText
         android:id="@+id/login_edittext_username"
@@ -29,25 +19,29 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:background="@drawable/edittext_round_white"
         android:drawablePadding="8dp"
         android:drawableRight="@drawable/ic_username_dark"
         android:elevation="2dp"
         android:ems="10"
         android:hint="نام کاربری"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="8dp" />
 
     <EditText
         android:id="@+id/login_edittext_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:background="@drawable/edittext_round_white"
         android:drawablePadding="8dp"
         android:drawableRight="@drawable/ic_password_dark"
         android:elevation="2dp"
         android:ems="10"
         android:gravity="right"
         android:hint="رمز عبور"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/login_button_guest"
@@ -67,22 +61,34 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/login_button_register"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_round_register"
-            android:text="ثبت نام"
-            android:textColor="@color/color_white"
-            android:textSize="18sp" />
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/login_button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round_register"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ثبت نام"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
         <Button
             android:id="@+id/login_button_enter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
             android:background="@drawable/button_round_register"
             android:elevation="1dp"
+            android:foreground="?android:attr/selectableItemBackground"
             android:text="ورود "
             android:textColor="@color/color_white"
             android:textSize="18sp" />
