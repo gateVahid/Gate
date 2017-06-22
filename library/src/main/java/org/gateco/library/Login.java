@@ -13,37 +13,42 @@ import android.widget.LinearLayout;
 
 public class Login extends LinearLayout {
 
-    EditText user,pass;
-    Button guest,register,enter;
+    EditText user, pass;
+    Button guest, register, enter;
 
 
-    public Login (Context c){
+    public Login(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.login,this);
+        LayoutInflater.from(c).inflate(R.layout.login, this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
 
-        user = (EditText)findViewById(R.id.login_edittext_username);
-        pass = (EditText)findViewById(R.id.login_edittext_password);
-        guest = (Button)findViewById(R.id.login_button_guest);
-        register = (Button)findViewById(R.id.login_button_register);
-        enter = (Button)findViewById(R.id.login_button_enter);
+        user = (EditText) findViewById(R.id.login_edittext_username);
+        pass = (EditText) findViewById(R.id.login_edittext_password);
+        guest = (Button) findViewById(R.id.login_button_guest);
+        register = (Button) findViewById(R.id.login_button_register);
+        enter = (Button) findViewById(R.id.login_button_enter);
 
     }
-    public  EditText getUser(){
-    return  this.user;
+
+    public EditText getUser() {
+        return this.user;
     }
-    public EditText getPass(){
-        return  this.pass;
+
+    public EditText getPass() {
+        return this.pass;
     }
-    public Button getGuest(){
-        return  this.guest;
+
+    public Button getGuest() {
+        return this.guest;
     }
-    public  Button getRegister(){
+
+    public Button getRegister() {
         return this.register;
     }
-    public Button getEnter(){
-    return  this.enter;
+
+    public Button getEnter() {
+        return this.enter;
     }
 }
 

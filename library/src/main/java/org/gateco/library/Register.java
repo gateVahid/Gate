@@ -13,32 +13,35 @@ import android.widget.LinearLayout;
 
 public class Register extends LinearLayout {
 
-    EditText user,pass,email;
-    Button  enter;
+    EditText user, pass, email;
+    Button enter;
 
-    public Register (Context c){
+    public Register(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.register,this);
+        LayoutInflater.from(c).inflate(R.layout.register, this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
 
-        user =(EditText)findViewById(R.id.register_edittext_username);
-        pass =(EditText)findViewById(R.id.register_edittext_password);
-        email =(EditText)findViewById(R.id.register_edittext_email);
-        enter =(Button)findViewById(R.id.register_button_register);
+        user = (EditText) findViewById(R.id.register_edittext_username);
+        pass = (EditText) findViewById(R.id.register_edittext_password);
+        email = (EditText) findViewById(R.id.register_edittext_email);
+        enter = (Button) findViewById(R.id.register_button_register);
 
     }
 
-    public EditText getUser (){
+    public EditText getUser() {
         return this.user;
     }
-    public  EditText getPass (){
+
+    public EditText getPass() {
         return this.pass;
     }
-    public  EditText getEmail (){
+
+    public EditText getEmail() {
         return this.email;
     }
-    public Button getEnter (){
+
+    public Button getEnter() {
         return this.enter;
     }
 
