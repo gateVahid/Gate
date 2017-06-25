@@ -16,7 +16,7 @@ public class AddDetail extends LinearLayout {
 
     public AddDetail(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.add_detail,this);
+        LayoutInflater.from(c).inflate(R.layout.add_detail,this); 
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
