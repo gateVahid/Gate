@@ -26,8 +26,8 @@ public class PageView extends LinearLayout {
 
 
 
-        name = (TextView) findViewById(R.id.PageView_Imageview_name);
-        pic = (ImageView) findViewById(R.id.PageView_Imageview_pic);
+        name = findViewById(R.id.PageView_Imageview_name);
+        pic = findViewById(R.id.PageView_Imageview_pic);
 
 
     }
