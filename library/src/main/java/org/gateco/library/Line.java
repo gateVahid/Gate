@@ -16,6 +16,7 @@ public class Line extends LinearLayout {
 
     TextView name;
     Button more;
+    LinearLayout container;
 
     public Line(Context c) {
         super(c);
@@ -25,16 +26,21 @@ public class Line extends LinearLayout {
 
         name = (TextView) findViewById(R.id.line_textview_name);
         more = (Button) findViewById(R.id.line_button_more);
+        container = (LinearLayout) findViewById(R.id.line_layout_container);
 
 
     }
 
     public TextView getName() {
+
         return this.name;
     }
 
-    public TextView getmore() {
+    public Button getmore() {
         return this.more;
     }
+
+    public  LinearLayout getContainer(){
+        return  this.container;}
 
 }

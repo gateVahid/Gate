@@ -14,25 +14,27 @@
         android:paddingTop="8dp">
 
         <TextView
-            android:id="@+id/adddetail_textview_detail"
+            android:id="@+id/adddetail_textview_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:layout_weight=".5"
-            android:background="@drawable/textview_round_adddetail_light"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_adddetail_dark"
+            android:gravity="start"
             android:padding="8dp"
-            android:text="750 کیلوگرم"
+            android:text="وزن"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/adddetail_textview_item"
+            android:id="@+id/adddetail_textview_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/textview_round_adddetail_dark"
+            android:layout_marginStart="8dp"
+            android:layout_weight=".5"
+            android:background="@drawable/textview_round_adddetail_light"
+            android:gravity="start"
             android:padding="8dp"
-            android:text="وزن"
+            android:text="750 کیلوگرم"
             android:textSize="18sp" />
 
     </LinearLayout>

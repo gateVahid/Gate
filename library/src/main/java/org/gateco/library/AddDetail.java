@@ -12,26 +12,26 @@ import android.widget.TextView;
 
 public class AddDetail extends LinearLayout {
 
-    TextView item, detail;
+    TextView name, value;
 
     public AddDetail(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.add_detail,this); 
+        LayoutInflater.from(c).inflate(R.layout.add_detail,this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
-        detail = (TextView) findViewById(R.id.adddetail_textview_detail);
-        item = (TextView) findViewById(R.id.adddetail_textview_item);
+        value = (TextView) findViewById(R.id.adddetail_textview_value);
+        name = (TextView) findViewById(R.id.adddetail_textview_name);
 
 
     }
 
-    public TextView getitem() {
-        return this.item;
+    public TextView getname() {
+        return this.name;
     }
 
-    public TextView getdetaail() {
-        return this.detail;
+    public TextView getvalue() {
+        return this.value;
     }
 
 }

@@ -20,7 +20,7 @@ public class PageView extends LinearLayout {
     public PageView(Context c) {
         super(c);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT));
+                ViewGroup.LayoutParams.MATCH_PARENT));
         LayoutInflater.from(c).inflate(R.layout.pageview,this);
 
 
