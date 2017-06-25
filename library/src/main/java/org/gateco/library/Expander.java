@@ -17,9 +17,11 @@ public class Expander extends LinearLayout {
 
     public Expander(Context c) {
         super(c);
+        LayoutInflater.from(c).inflate(R.layout.expander,this);
+
         LayoutInflater.from(c).inflate(R.layout.expander, this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT));
+                ViewGroup.LayoutParams.WRAP_CONTENT));
 
         container = (LinearLayout) findViewById(R.id.expander_container_shortinfo);
         info = (Button) findViewById(R.id.expander_button_info);
