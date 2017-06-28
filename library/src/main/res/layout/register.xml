@@ -12,7 +12,7 @@
         android:layout_width="175dp"
         android:layout_height="175dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/gate_primary" />
+        android:background="@drawable/gate_green" />
 
     <EditText
         android:id="@+id/register_edittext_username"

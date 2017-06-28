@@ -17,7 +17,7 @@
                 android:id="@+id/PageView_Imageview_pic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/grey_pic" />
+                android:src="@drawable/gate_grey" />
 
             <TextView
                 android:id="@+id/PageView_Imageview_name"
