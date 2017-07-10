@@ -10,13 +10,13 @@ import android.widget.TextView;
  * Created by Vahid on 06/25/2017.
  */
 
-public class AddDetail extends LinearLayout {
+public class DetailView extends LinearLayout {
 
     TextView name, value;
 
-    public AddDetail(Context c) {
+    public DetailView(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.add_detail,this);
+        LayoutInflater.from(c).inflate(R.layout.detailview,this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 

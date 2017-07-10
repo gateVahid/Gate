@@ -16,68 +16,73 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/color_white_background"
-            android:orientation="vertical"
-            android:padding="8dp">
+            android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/dialog_textview_oldpass"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:layout_marginRight="4dp"
-                android:text="رمز عبور" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <EditText
-                android:id="@+id/dialoge_edittext_oldpass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_round_white"
-                android:ems="10"
-                android:gravity="right"
-                android:inputType="textPassword"
-                android:padding="8dp" />
+                <TextView
+                    android:id="@+id/dialog_textview_oldpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="رمز عبور" />
 
+                <EditText
+                    android:id="@+id/dialoge_edittext_retypenewpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/passchange_edittext_divider"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
 
-            <TextView
-                android:id="@+id/dialog_texview_newpass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="8dp"
-                android:text="رمز عبور جدید" />
+                <TextView
+                    android:id="@+id/dialog_texview_newpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="رمز عبور جدید" />
 
-            <EditText
-                android:id="@+id/dialoge_edittext_newpass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_round_white"
-                android:ems="10"
-                android:gravity="right"
-                android:inputType="textPassword"
-                android:padding="8dp" />
+                <EditText
+                    android:id="@+id/dialoge_edittext_oldpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/passchange_edittext_divider"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
 
+                <TextView
+                    android:id="@+id/dialog_texview_retypenewpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="تکرار رمز عبور جدید" />
 
-            <TextView
-                android:id="@+id/dialog_texview_retypenewpass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="8dp"
-                android:text="تکرار رمز عبور جدید" />
+                <EditText
+                    android:id="@+id/dialoge_edittext_newpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/passchange_edittext_divider"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
 
-            <EditText
-                android:id="@+id/dialoge_edittext_retypenewpass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/edittext_round_white"
-                android:ems="10"
-                android:gravity="right"
-                android:inputType="textPassword"
-                android:padding="8dp" />
+            </LinearLayout>
 
 
             <Button
@@ -88,6 +93,7 @@
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackground"
                 android:text="ثبت"
+                android:textColor="@color/colorAccent"
                 android:textColorLink="@color/colorAccent" />
 
 

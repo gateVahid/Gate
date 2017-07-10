@@ -57,5 +57,23 @@ public class Holder extends LinearLayout {
     }
 
 
+    public void setContainer1Params(int w, int h){
+        container1.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    }
+    public void setContainer2Params(int w, int h) {
+        container2.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    }
+    public void setContainer3Params(int w, int h) {
+        container3.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    }
+    public void setContainer4Params(int w, int h) {
+        container4.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    }
+    public void setContainer5Params(int w, int h) {
+        container5.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    }
+
+
+
 }
 

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ToggleButton;
 
 /**
  * Created by Vahid on 06/25/2017.
@@ -24,7 +25,7 @@ public class Expander extends LinearLayout {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         container = (LinearLayout) findViewById(R.id.expander_container_shortinfo);
-        info = (Button) findViewById(R.id.expander_button_info);
+        info = (ToggleButton) findViewById(R.id.expander_button_info);
 
 
     }

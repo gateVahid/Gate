@@ -2,7 +2,6 @@ package org.gateco.library;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;

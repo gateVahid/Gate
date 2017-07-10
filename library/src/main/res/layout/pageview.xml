@@ -17,6 +17,7 @@
                 android:id="@+id/PageView_Imageview_pic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="top"
                 android:src="@drawable/gate_grey" />
 
             <TextView
@@ -25,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:background="@color/color_transparent_background"
-                android:padding="16dp"
+                android:padding="8dp"
                 android:text="نام"
                 android:textColor="@color/color_white" />
         </FrameLayout>

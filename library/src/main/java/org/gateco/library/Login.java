@@ -1,8 +1,13 @@
 package org.gateco.library;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -16,6 +21,7 @@ public class Login extends LinearLayout {
     EditText user, pass;
     Button guest, register, enter;
 
+    Animation animFadein;
 
     public Login(Context c) {
         super(c);
@@ -29,9 +35,15 @@ public class Login extends LinearLayout {
         register = (Button) findViewById(R.id.login_button_register);
         enter = (Button) findViewById(R.id.login_button_enter);
 
+        animFadein = AnimationUtils.loadAnimation(c, R.anim.anim_test);
+
+        enter.startAnimation(animFadein);
+
+
     }
 
     public EditText getUser() {
+
         return this.user;
     }
 

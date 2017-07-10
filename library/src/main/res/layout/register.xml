@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:background="@drawable/button_round_register"
+        android:background="@drawable/cardview_round"
         android:elevation="4dp"
         android:foreground="?android:attr/selectableItemBackground"
         android:text="ثبت نام"

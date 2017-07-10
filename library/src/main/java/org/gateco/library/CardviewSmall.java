@@ -11,14 +11,14 @@ import android.widget.TextView;
  * Created by Vahid on 06/27/2017.
  */
 
-public class Cardview_small extends LinearLayout{
+public class CardviewSmall extends LinearLayout{
 
     TextView  name,primaryprice,secondaryprice;
     ImageView pic;
 
-    public  Cardview_small (Context c) {
+    public CardviewSmall(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.register, this);
+        LayoutInflater.from(c).inflate(R.layout.cardview_small, this);
 
         name = (TextView) findViewById(R.id.cardviews_textview_name);
         primaryprice = (TextView) findViewById(R.id.cardview_textview_primaryprice);
