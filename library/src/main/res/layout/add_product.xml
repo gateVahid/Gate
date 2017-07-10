@@ -21,7 +21,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                app:srcCompat="@drawable/ic_addphoto_dark" />
+                android:src="@drawable/ic_addphoto_dark" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -201,7 +201,7 @@
                                     android:layout_height="175dp"
                                     android:layout_margin="8dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/ic_addphoto_dark" />
+                                    android:src="@drawable/ic_addphoto_dark" />
 
                                 <TextView
                                     android:id="@+id/ap_textview_slider1TV"
@@ -239,7 +239,7 @@
                                     android:layout_height="175dp"
                                     android:layout_margin="8dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/ic_addphoto_dark" />
+                                    android:src="@drawable/ic_addphoto_dark" />
 
                                 <TextView
                                     android:id="@+id/ap_textview_slider2TV"
@@ -277,7 +277,8 @@
                                     android:layout_height="175dp"
                                     android:layout_margin="8dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/ic_addphoto_dark" />
+                                    android:elevation="1dp"
+                                    android:src="@drawable/ic_addphoto_dark" />
 
                                 <TextView
                                     android:id="@+id/ap_textview_slider3TV"
@@ -315,7 +316,7 @@
                                     android:layout_height="175dp"
                                     android:layout_margin="8dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/ic_addphoto_dark" />
+                                    android:src="@drawable/ic_addphoto_dark" />
 
                                 <TextView
                                     android:id="@+id/ap_textview_slider4TV"
@@ -353,7 +354,7 @@
                                     android:layout_height="175dp"
                                     android:layout_margin="8dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/ic_addphoto_dark" />
+                                    android:src="@drawable/ic_addphoto_dark" />
 
                                 <TextView
                                     android:id="@+id/ap_textview_slider5TV"
