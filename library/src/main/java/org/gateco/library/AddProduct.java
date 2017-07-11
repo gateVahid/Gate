@@ -18,6 +18,10 @@ public class AddProduct extends LinearLayout {
     TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV;
     EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET;
 
+    ImageView[] ivs = new ImageView[6];
+    TextView[] tvs = new TextView[10];
+    EditText[] ets = new EditText[5];
+
 
     public AddProduct(Context c){
         super(c);
@@ -50,8 +54,37 @@ public class AddProduct extends LinearLayout {
         secondarypriceET= (EditText)findViewById(R.id.ap_edittext_secondarypriceET);
         infoET = (EditText)findViewById(R.id.ap_edittext_infoET);
 
+        ivs[0] = icon;
+        ivs[1] = slider1IV;
+        ivs[2] = slider2IV;
+        ivs[3] = slider3IV;
+        ivs[4] = slider4IV;
+        ivs[5] = slider5IV;
+
+
+        tvs[0] = nameTV;
+        tvs[1] = shortinfoTV;
+        tvs[2] = primarypriceTV;
+        tvs[3] = secondarypriceTV;
+        tvs[4] = infoTV;
+        tvs[5] = slider1TV;
+        tvs[6] = slider2TV;
+        tvs[7] = slider3TV;
+        tvs[8] = slider4TV;
+        tvs[9] = slider5TV;
+
+
+        ets[0] = nameET;
+        ets[1] = shortinfoET;
+        ets[2] = primarypriceET;
+        ets[3] = secondarypriceET;
+        ets[4] = infoET;
+
+
 
     }
+
+
 
 
 
@@ -119,4 +152,16 @@ public class AddProduct extends LinearLayout {
     public TextView getSlider5TV(){
         return this.slider5TV;
     }
+
+
+    public ImageView[] getImageViews(){
+        return this.ivs;
+    }
+    public  TextView[] getTextViews(){
+        return this.tvs;
+    }
+    public EditText[] getEditTexts(){
+        return this.ets;
+    }
+
 }
