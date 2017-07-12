@@ -21,7 +21,6 @@ public class Login extends LinearLayout {
     EditText user, pass;
     Button guest, register, enter;
 
-    Animation animFadein;
 
     public Login(Context c) {
         super(c);
@@ -35,9 +34,7 @@ public class Login extends LinearLayout {
         register = (Button) findViewById(R.id.login_button_register);
         enter = (Button) findViewById(R.id.login_button_enter);
 
-        animFadein = AnimationUtils.loadAnimation(c, R.anim.anim_test);
 
-        enter.startAnimation(animFadein);
 
 
     }
