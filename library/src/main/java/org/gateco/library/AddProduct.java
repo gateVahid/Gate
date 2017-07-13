@@ -18,7 +18,7 @@ public class AddProduct extends LinearLayout {
     TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV;
     EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET;
 
-    ImageView[] ivs = new ImageView[6];
+    ImageView[] ivs = new ImageView[5];
     TextView[] tvs = new TextView[10];
     EditText[] ets = new EditText[5];
 
@@ -54,12 +54,11 @@ public class AddProduct extends LinearLayout {
         secondarypriceET= (EditText)findViewById(R.id.ap_edittext_secondarypriceET);
         infoET = (EditText)findViewById(R.id.ap_edittext_infoET);
 
-        ivs[0] = icon;
-        ivs[1] = slider1IV;
-        ivs[2] = slider2IV;
-        ivs[3] = slider3IV;
-        ivs[4] = slider4IV;
-        ivs[5] = slider5IV;
+        ivs[0] = slider1IV;
+        ivs[1] = slider2IV;
+        ivs[2] = slider3IV;
+        ivs[3] = slider4IV;
+        ivs[4] = slider5IV;
 
 
         tvs[0] = nameTV;

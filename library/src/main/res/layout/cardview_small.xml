@@ -74,7 +74,7 @@
                     android:padding="4dp"
                     android:text="قیمت با تخفیف"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="15sp" />
+                    android:textSize="17sp" />
 
             </LinearLayout>
         </LinearLayout>
