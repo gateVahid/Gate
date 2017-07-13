@@ -35,9 +35,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:background="@color/color_transparent_background"
+                    android:gravity="start"
                     android:padding="4dp"
                     android:text="لذت زندگی در یک بطری"
-                    android:textColor="@color/color_white" />
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
             </FrameLayout>
 
             <LinearLayout
@@ -56,20 +58,23 @@
                     android:id="@+id/cardview_textview_secondaryprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="end"
                     android:layout_weight="1"
                     android:padding="4dp"
                     android:text="قیمت اصلی"
                     android:textColor="@android:color/holo_red_dark"
-                    android:textSize="10sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/cardview_textview_primaryprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="end"
                     android:layout_weight="1"
                     android:padding="4dp"
                     android:text="قیمت با تخفیف"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
 
             </LinearLayout>
         </LinearLayout>

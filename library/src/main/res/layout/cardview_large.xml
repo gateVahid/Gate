@@ -26,6 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="start"
                     android:orientation="vertical">
 
                     <TextView
@@ -41,6 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:gravity="start"
                         android:text="بهترین برند مشروبات الکلی کشور"
                         android:textColor="@color/secondary_text" />
 
@@ -69,6 +71,7 @@
                             android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="end"
                             android:text="قیمت اصلی"
                             android:textColor="@android:color/holo_red_dark" />
 
@@ -76,6 +79,7 @@
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="end"
                             android:layout_marginTop="4dp"
                             android:layout_weight="1"
                             android:text="قیمت با تخفیف"
