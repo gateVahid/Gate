@@ -27,7 +27,7 @@
                     android:layout_width="180dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/wine" />
+                    android:src="@drawable/gate_grey" />
 
                 <TextView
                     android:id="@+id/cardviews_textview_name"
