@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 public class Editprofile extends LinearLayout {
 
     EditText name,username,email,address,phone;
-    Button passchange,signout;
+    Button passchange;
 
     public Editprofile (Context c){
         super(c);
@@ -29,7 +29,6 @@ public class Editprofile extends LinearLayout {
         address = (EditText)findViewById(R.id.editprofile_edittext_address);
         phone = (EditText)findViewById(R.id.editprofile_edittext_phone);
         passchange = (Button)findViewById(R.id.editprofile_button_passchange);
-        signout = (Button)findViewById(R.id.editprofile_button_signout);
 
     }
 
@@ -39,7 +38,6 @@ public class Editprofile extends LinearLayout {
     public EditText getAddress(){return  this.address;}
     public EditText getPhone(){return  this.phone;}
     public Button getPasschange(){return this.passchange;}
-    public Button getSignout(){return this.signout;}
 
     public void disable(){
         name.setEnabled(false);

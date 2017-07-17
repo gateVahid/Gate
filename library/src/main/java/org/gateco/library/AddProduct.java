@@ -1,8 +1,11 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -14,13 +17,12 @@ import android.widget.TextView;
 
 public class AddProduct extends LinearLayout {
 
-    ImageView icon,slider1IV,slider2IV,slider3IV,slider4IV,slider5IV;
+    ImageView icon,slider1IV,slider2IV,slider3IV,slider4IV,slider5IV,viewpagerpic;
     TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV;
     EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET;
+    CheckBox addspecial,viewpager;
 
     ImageView[] ivs = new ImageView[5];
-    TextView[] tvs = new TextView[10];
-    EditText[] ets = new EditText[5];
 
 
     public AddProduct(Context c){
@@ -36,6 +38,7 @@ public class AddProduct extends LinearLayout {
         slider3IV = (ImageView)findViewById(R.id.ap_imageview_slider3IV);
         slider4IV = (ImageView)findViewById(R.id.ap_imageview_slider4IV);
         slider5IV = (ImageView)findViewById(R.id.ap_imageview_slider5IV);
+        viewpagerpic = (ImageView)findViewById(R.id.ap_imageview_viewpagerpic);
 
         nameTV = (TextView)findViewById(R.id.ap_textview_nameTV);
         shortinfoTV = (TextView)findViewById(R.id.ap_textview_shortinfoTV);
@@ -54,38 +57,16 @@ public class AddProduct extends LinearLayout {
         secondarypriceET= (EditText)findViewById(R.id.ap_edittext_secondarypriceET);
         infoET = (EditText)findViewById(R.id.ap_edittext_infoET);
 
+        viewpager = (CheckBox)findViewById(R.id.ap_checkbox_viewpager);
+        addspecial = (CheckBox)findViewById(R.id.ap_checkbox_addspecial);
+
         ivs[0] = slider1IV;
         ivs[1] = slider2IV;
         ivs[2] = slider3IV;
         ivs[3] = slider4IV;
         ivs[4] = slider5IV;
 
-
-        tvs[0] = nameTV;
-        tvs[1] = shortinfoTV;
-        tvs[2] = primarypriceTV;
-        tvs[3] = secondarypriceTV;
-        tvs[4] = infoTV;
-        tvs[5] = slider1TV;
-        tvs[6] = slider2TV;
-        tvs[7] = slider3TV;
-        tvs[8] = slider4TV;
-        tvs[9] = slider5TV;
-
-
-        ets[0] = nameET;
-        ets[1] = shortinfoET;
-        ets[2] = primarypriceET;
-        ets[3] = secondarypriceET;
-        ets[4] = infoET;
-
-
-
     }
-
-
-
-
 
     public ImageView getIcon(){
         return this.icon;
@@ -109,6 +90,10 @@ public class AddProduct extends LinearLayout {
 
     public ImageView getSlider5IV(){
         return this.slider5IV;
+    }
+
+    public ImageView getViewpagerpic(){
+        return this.viewpagerpic;
     }
 
 
@@ -153,14 +138,42 @@ public class AddProduct extends LinearLayout {
     }
 
 
+    public CheckBox getViewpager(){
+        return this.viewpager;
+    }
+
+    public CheckBox getAddspecial(){
+        return this.addspecial;
+    }
+
+
     public ImageView[] getImageViews(){
         return this.ivs;
     }
-    public  TextView[] getTextViews(){
-        return this.tvs;
-    }
-    public EditText[] getEditTexts(){
-        return this.ets;
+
+
+    public void setTypeFace(Typeface tf){
+
+        nameTV.setTypeface(tf);
+        shortinfoTV.setTypeface(tf);
+        primarypriceTV.setTypeface(tf);
+        secondarypriceTV.setTypeface(tf);
+        infoTV.setTypeface(tf);
+        slider1TV.setTypeface(tf);
+        slider2TV.setTypeface(tf);
+        slider3TV.setTypeface(tf);
+        slider4TV.setTypeface(tf);
+        slider5TV.setTypeface(tf);
+
+        nameET.setTypeface(tf);
+        shortinfoET.setTypeface(tf);
+        primarypriceET.setTypeface(tf);
+        secondarypriceTV.setTypeface(tf);
+        infoET.setTypeface(tf);
+
+        viewpager.setTypeface(tf);
+        addspecial.setTypeface(tf);
+
     }
 
 }

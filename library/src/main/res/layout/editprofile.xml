@@ -70,6 +70,7 @@
         android:background="@drawable/button_round_passchange"
         android:drawableTint="@color/color_white_trans"
         android:elevation="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="تغییر رمز عبور"
         android:textColor="@android:color/holo_red_dark" />
 
@@ -77,16 +78,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/editprofile_button_signout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/button_round_signout"
-        android:padding="4dp"
-        android:text="خروج"
-        android:textColor="@color/color_white"
-        android:textSize="18sp" />
 
 </LinearLayout>
