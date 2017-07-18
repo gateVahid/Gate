@@ -1,10 +1,12 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 /**
@@ -36,6 +38,12 @@ public class Expander extends LinearLayout {
 
     public Button getInfo() {
         return this.info;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        info.setTypeface(tf);
     }
 
 

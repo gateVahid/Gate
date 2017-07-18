@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -53,6 +54,17 @@ public class Editprofile extends LinearLayout {
         email.setEnabled(true);
         address.setEnabled(true);
         phone.setEnabled(true);
+
+    }
+
+    public void setTypeFace(Typeface tf){
+
+        name.setTypeface(tf);
+        username.setTypeface(tf);
+        email.setTypeface(tf);
+        address.setTypeface(tf);
+        phone.setTypeface(tf);
+        passchange.setTypeface(tf);
 
     }
 

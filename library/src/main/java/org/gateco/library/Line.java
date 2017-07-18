@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -42,5 +43,11 @@ public class Line extends LinearLayout {
 
     public  LinearLayout getContainer(){
         return  this.container;}
+
+    public void setTypeFace(Typeface tf){
+
+        name.setTypeface(tf);
+        more.setTypeface(tf);
+    }
 
 }

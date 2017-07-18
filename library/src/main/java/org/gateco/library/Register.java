@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -43,6 +44,16 @@ public class Register extends LinearLayout {
 
     public Button getEnter() {
         return this.enter;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        user.setTypeface(tf);
+        pass.setTypeface(tf);
+        email.setTypeface(tf);
+        enter.setTypeface(tf);
+
     }
 
 }

@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -38,5 +39,14 @@ public class CardviewSmall extends LinearLayout{
     }
     public ImageView getPic(){
         return this.pic;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        name.setTypeface(tf);
+        primaryprice.setTypeface(tf);
+        secondaryprice.setTypeface(tf);
+
     }
 }

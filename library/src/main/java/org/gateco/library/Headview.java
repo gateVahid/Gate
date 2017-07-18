@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -64,5 +65,14 @@ public class Headview extends LinearLayout {
         else
             like.setImageResource(R.drawable.ic_like_blank);
 
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        name.setTypeface(tf);
+        primaryprice.setTypeface(tf);
+        secondaryprice.setTypeface(tf);
+        info.setTypeface(tf);
     }
 }

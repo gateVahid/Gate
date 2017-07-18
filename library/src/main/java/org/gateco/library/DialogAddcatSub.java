@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -60,6 +61,14 @@ public class DialogAddcatSub extends Dialog {
     public Button getOk(){
 
         return this.ok;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        subnameE.setTypeface(tf);
+        subnameT.setTypeface(tf);
+        ok.setTypeface(tf);
     }
 
 

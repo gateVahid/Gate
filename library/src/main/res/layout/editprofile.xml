@@ -67,7 +67,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/button_round_passchange"
         android:drawableTint="@color/color_white_trans"
         android:elevation="16dp"
         android:foreground="?android:attr/selectableItemBackground"

@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Window;
 import android.widget.Button;
@@ -60,6 +61,18 @@ public class DialogPasschange extends Dialog {
     }
     public  Button getOk(){
         return this.ok;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        oldpassT.setTypeface(tf);
+        newpassT.setTypeface(tf);
+        retypenewpassT.setTypeface(tf);
+        oldpassE.setTypeface(tf);
+        newpassE.setTypeface(tf);
+        retypenewpassE.setTypeface(tf);
+        ok.setTypeface(tf);
     }
 
 

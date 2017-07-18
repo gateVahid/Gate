@@ -18,8 +18,8 @@ import android.widget.TextView;
 public class AddProduct extends LinearLayout {
 
     ImageView icon,slider1IV,slider2IV,slider3IV,slider4IV,slider5IV,viewpagerpic;
-    TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV;
-    EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET;
+    TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV,priorityTV,adddetail;
+    EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET,priorityET;
     CheckBox addspecial,viewpager;
 
     ImageView[] ivs = new ImageView[5];
@@ -50,12 +50,15 @@ public class AddProduct extends LinearLayout {
         slider3TV = (TextView)findViewById(R.id.ap_textview_slider3TV);
         slider4TV = (TextView)findViewById(R.id.ap_textview_slider4TV);
         slider5TV = (TextView)findViewById(R.id.ap_textview_slider5TV);
+        priorityTV = (TextView)findViewById(R.id.ap_textview_priorityTV);
+        adddetail = (TextView)findViewById(R.id.ap_textview_adddetail);
 
         nameET = (EditText)findViewById(R.id.ap_edittext_nameET);
         shortinfoET = (EditText)findViewById(R.id.ap_edittext_shortinfoET);
         primarypriceET = (EditText)findViewById(R.id.ap_edittext_primarypriceET);
         secondarypriceET= (EditText)findViewById(R.id.ap_edittext_secondarypriceET);
         infoET = (EditText)findViewById(R.id.ap_edittext_infoET);
+        priorityET = (EditText)findViewById(R.id.ap_editttext_priorityET);
 
         viewpager = (CheckBox)findViewById(R.id.ap_checkbox_viewpager);
         addspecial = (CheckBox)findViewById(R.id.ap_checkbox_addspecial);
@@ -121,6 +124,12 @@ public class AddProduct extends LinearLayout {
     public TextView getSlider5TV(){
         return this.slider5TV;
     }
+    public TextView getPriorityTV(){
+        return this.priorityTV;
+    }
+    public TextView getAdddetail(){
+        return this.adddetail;
+    }
 
 
     public EditText getNameET(){
@@ -137,6 +146,9 @@ public class AddProduct extends LinearLayout {
     }
     public EditText getInfoET(){
         return this.infoET;
+    }
+    public EditText getPriorityET(){
+        return this.priorityET;
     }
 
 
@@ -165,12 +177,15 @@ public class AddProduct extends LinearLayout {
         slider3TV.setTypeface(tf);
         slider4TV.setTypeface(tf);
         slider5TV.setTypeface(tf);
+        priorityTV.setTypeface(tf);
+        adddetail.setTypeface(tf);
 
         nameET.setTypeface(tf);
         shortinfoET.setTypeface(tf);
         primarypriceET.setTypeface(tf);
-        secondarypriceTV.setTypeface(tf);
+        secondarypriceET.setTypeface(tf);
         infoET.setTypeface(tf);
+        priorityET.setTypeface(tf);
 
         viewpager.setTypeface(tf);
         addspecial.setTypeface(tf);

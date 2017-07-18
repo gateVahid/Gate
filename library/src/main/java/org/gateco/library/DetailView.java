@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -32,6 +33,13 @@ public class DetailView extends LinearLayout {
 
     public TextView getvalue() {
         return this.value;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        name.setTypeface(tf);
+        value.setTypeface(tf);
     }
 
 }

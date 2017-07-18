@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Window;
 import android.widget.Button;
@@ -48,5 +49,17 @@ public class DialogMakeSure extends Dialog {
     public Button getNo(){
         return this.no;
     }
+
+
+    public void setTypeFace(Typeface tf){
+
+        title.setTypeface(tf);
+        massage.setTypeface(tf);
+        yes.setTypeface(tf);
+        no.setTypeface(tf);
+    }
+
+
+
 
 }

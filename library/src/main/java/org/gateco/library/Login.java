@@ -2,6 +2,7 @@ package org.gateco.library;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,6 +91,17 @@ public class Login extends LinearLayout {
         guest.setVisibility(VISIBLE);
         register.setVisibility(VISIBLE);
         enter.setText(ENTER_TEXT);
+    }
+
+    public void setTypeFace(Typeface tf){
+
+        user.setTypeface(tf);
+        pass.setTypeface(tf);
+        guest.setTypeface(tf);
+        register.setTypeface(tf);
+        enter.setTypeface(tf);
+        forgetpass.setTypeface(tf);
+
     }
 
 }

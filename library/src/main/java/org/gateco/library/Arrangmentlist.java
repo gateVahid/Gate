@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -27,7 +28,13 @@ public class Arrangmentlist extends LinearLayout {
 
         return this.listname;
     }
-    public  ImageView getListicon(){
+    public  ImageView getListicon() {
         return this.listicon;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        listname.setTypeface(tf);
     }
 }
