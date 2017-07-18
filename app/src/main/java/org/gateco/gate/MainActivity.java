@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_make_sure);
+        setContentView(R.layout.cardview_small);
 
 
 

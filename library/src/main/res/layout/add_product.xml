@@ -403,6 +403,15 @@
                         android:text="اضافه کردن به محصولات ویژه"
                         android:textSize="18sp" />
 
+                    <CheckBox
+                        android:id="@+id/ap_checkbox_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:padding="8dp"
+                        android:text="محصول منتخب اسلایدر"
+                        android:textSize="18sp" />
+
                     <TextView
                         android:id="@+id/ap_textview_priorityTV"
                         android:layout_width="match_parent"
@@ -420,15 +429,6 @@
                         android:layout_marginRight="4dp"
                         android:ems="10"
                         android:inputType="textPersonName" />
-
-                    <CheckBox
-                        android:id="@+id/ap_checkbox_viewpager"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
-                        android:text="محصول منتخب اسلایدر"
-                        android:textSize="18sp" />
 
                     <ImageView
                         android:id="@+id/ap_imageview_viewpagerpic"
@@ -459,10 +459,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:drawableRight="@android:drawable/ic_input_add"
+                        android:drawableRight="@drawable/ic_plus_grey"
                         android:gravity="center_vertical|end"
                         android:padding="8dp"
-                        android:text="اضافه کردن جزییات" />
+                        android:text="اضافه کردن جزییات"
+                        android:textSize="18sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
