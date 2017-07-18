@@ -7,8 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="8dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +21,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:gravity="center|start"
-                android:padding="8dp"
                 android:text="نام"
                 android:textColor="@color/primary_text"
                 android:textSize="18sp" />

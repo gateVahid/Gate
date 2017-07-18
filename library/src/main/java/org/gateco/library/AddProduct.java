@@ -71,27 +71,21 @@ public class AddProduct extends LinearLayout {
     public ImageView getIcon(){
         return this.icon;
     }
-
     public ImageView getSlider1IV(){
         return this.slider1IV;
     }
-
     public ImageView getSlider2IV(){
         return this.slider2IV;
     }
-
     public ImageView getSlider3IV(){
         return this.slider3IV;
     }
-
     public ImageView getSlider4IV(){
         return this.slider4IV;
     }
-
     public ImageView getSlider5IV(){
         return this.slider5IV;
     }
-
     public ImageView getViewpagerpic(){
         return this.viewpagerpic;
     }
@@ -100,48 +94,55 @@ public class AddProduct extends LinearLayout {
     public TextView getNameTV(){
         return this.nameTV;
     }
-
     public TextView getShortinfoTV(){
         return this.shortinfoTV;
     }
-
     public TextView getPrimarypriceTV(){
         return this.primarypriceTV;
     }
-
     public TextView getSecondarypriceTV(){
         return this.secondarypriceTV;
     }
-
     public TextView getInfoTV(){
         return this.infoTV;
     }
-
     public TextView getSlider1TV(){
         return this.slider1TV;
     }
-
     public TextView getSlider2TV(){
         return this.slider2TV;
     }
-
     public TextView getSlider3TV(){
         return this.slider3TV;
     }
-
     public TextView getSlider4TV(){
         return this.slider4TV;
     }
-
     public TextView getSlider5TV(){
         return this.slider5TV;
+    }
+
+
+    public EditText getNameET(){
+        return this.nameET;
+    }
+    public EditText getShortinfoET(){
+        return this.shortinfoET;
+    }
+    public EditText getPrimarypriceET(){
+        return this.primarypriceET;
+    }
+    public EditText getSecondarypriceET(){
+        return this.secondarypriceET;
+    }
+    public EditText getInfoET(){
+        return this.infoET;
     }
 
 
     public CheckBox getViewpager(){
         return this.viewpager;
     }
-
     public CheckBox getAddspecial(){
         return this.addspecial;
     }
