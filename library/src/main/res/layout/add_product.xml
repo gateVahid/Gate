@@ -53,11 +53,11 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:windowSoftInputMode="stateHidden"
                             android:inputType="textPersonName"
-                            android:maxLength="35" >
+                            android:maxLength="35"
+                            android:windowSoftInputMode="stateHidden">
 
-                            <requestFocus/>
+                            <requestFocus />
 
                         </EditText>
 
@@ -165,10 +165,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:windowSoftInputMode="stateHidden"
                             android:ems="10"
                             android:inputType="textMultiLine"
-                            android:maxLength="1000" />
+                            android:maxLength="1000"
+                            android:windowSoftInputMode="stateHidden" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -407,7 +407,6 @@
                         android:id="@+id/ap_checkbox_viewpager"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
                         android:padding="8dp"
                         android:text="محصول منتخب اسلایدر"
                         android:textSize="18sp" />
@@ -416,8 +415,9 @@
                         android:id="@+id/ap_textview_priorityTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:padding="8dp"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
                         android:text="اولویت"
                         android:textSize="18sp" />
 
@@ -435,7 +435,7 @@
                         android:layout_width="175dp"
                         android:layout_height="175dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:foreground="?android:attr/selectableItemBackground"
                         android:src="@drawable/ic_addphoto_dark" />
 
@@ -446,7 +446,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp" >
+                android:layout_margin="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

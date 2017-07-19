@@ -11,8 +11,8 @@
         android:id="@+id/imageView7"
         android:layout_width="175dp"
         android:layout_height="175dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/gate_green" />
+        android:src="@drawable/gate_grey_vector"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/register_edittext_username"
