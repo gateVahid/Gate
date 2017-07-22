@@ -316,15 +316,6 @@
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
-                                <ImageView
-                                    android:id="@+id/ap_imageview_slider4IV"
-                                    android:layout_width="175dp"
-                                    android:layout_height="175dp"
-                                    android:layout_margin="8dp"
-                                    android:layout_weight="1"
-                                    android:foreground="?android:attr/selectableItemBackground"
-                                    android:src="@drawable/ic_addphoto_dark" />
-
                                 <TextView
                                     android:id="@+id/ap_textview_slider4TV"
                                     android:layout_width="match_parent"
@@ -339,6 +330,15 @@
                                     android:text="اسلاید 4"
                                     android:textColor="@color/color_white"
                                     android:textSize="18sp" />
+
+                                <ImageView
+                                    android:id="@+id/ap_imageview_slider4IV"
+                                    android:layout_width="175dp"
+                                    android:layout_height="175dp"
+                                    android:layout_margin="8dp"
+                                    android:layout_weight="1"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:src="@drawable/ic_addphoto_dark" />
                             </LinearLayout>
                         </android.support.v7.widget.CardView>
 
@@ -428,7 +428,7 @@
                         android:layout_marginLeft="4dp"
                         android:layout_marginRight="4dp"
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:inputType="number" />
 
                     <ImageView
                         android:id="@+id/ap_imageview_viewpagerpic"
@@ -446,12 +446,15 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:clickable="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
                     android:orientation="vertical">
 
                     <TextView
@@ -466,6 +469,7 @@
                         android:textSize="18sp" />
 
                     <LinearLayout
+                        android:id="@+id/ap_layout_detailcontainer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
