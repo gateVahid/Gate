@@ -1,6 +1,7 @@
 package org.gateco.library;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -30,6 +31,23 @@ public class CommentShow extends LinearLayout{
 
     }
 
-    
+
+    public TextView getSay(){
+        return this.say;
+    }
+    public TextView getUser(){
+        return this.getSay();
+    }
+    public EditText getComment(){
+        return this.comment;
+    }
+
+
+    public void setTypeFace(Typeface tf){
+
+        user.setTypeface(tf);
+        say.setTypeface(tf);
+        comment.setTypeface(tf);
+    }
 
 }
