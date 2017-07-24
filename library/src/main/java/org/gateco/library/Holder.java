@@ -31,47 +31,27 @@ public class Holder extends LinearLayout {
 
     }
 
-    public LinearLayout getContainer1(int w, int h) {
-        container1.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    public LinearLayout getContainer1() {
         return this.container1;
     }
 
-    public LinearLayout getContainer2(int w, int h) {
-        container2.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    public LinearLayout getContainer2() {
         return this.container2;
     }
 
-    public LinearLayout getContainer3(int w, int h) {
-        container3.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    public LinearLayout getContainer3() {
         return this.container3;
     }
 
-    public LinearLayout getContainer4(int w, int h) {
-        container4.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    public LinearLayout getContainer4() {
         return this.container4;
     }
 
-    public LinearLayout getContainer5(int w,int h) {
-        container5.setLayoutParams(new LinearLayout.LayoutParams(w, h));
+    public LinearLayout getContainer5() {
         return this.container5;
     }
 
 
-    public void setContainer1Params(int w, int h){
-        container1.setLayoutParams(new LinearLayout.LayoutParams(w, h));
-    }
-    public void setContainer2Params(int w, int h) {
-        container2.setLayoutParams(new LinearLayout.LayoutParams(w, h));
-    }
-    public void setContainer3Params(int w, int h) {
-        container3.setLayoutParams(new LinearLayout.LayoutParams(w, h));
-    }
-    public void setContainer4Params(int w, int h) {
-        container4.setLayoutParams(new LinearLayout.LayoutParams(w, h));
-    }
-    public void setContainer5Params(int w, int h) {
-        container5.setLayoutParams(new LinearLayout.LayoutParams(w, h));
-    }
 
 
 

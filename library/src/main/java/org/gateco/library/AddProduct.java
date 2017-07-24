@@ -3,6 +3,7 @@ package org.gateco.library;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.media.Image;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
@@ -21,6 +22,7 @@ public class AddProduct extends LinearLayout {
     TextView nameTV,shortinfoTV,primarypriceTV,secondarypriceTV,infoTV,slider1TV,slider2TV,slider3TV,slider4TV,slider5TV,priorityTV,adddetail;
     EditText nameET,shortinfoET,primarypriceET,secondarypriceET,infoET,priorityET;
     CheckBox addspecial,viewpager;
+    LinearLayout detailcontainer;
 
     ImageView[] ivs = new ImageView[5];
 
@@ -44,24 +46,26 @@ public class AddProduct extends LinearLayout {
         shortinfoTV = (TextView)findViewById(R.id.ap_textview_shortinfoTV);
         primarypriceTV = (TextView)findViewById(R.id.ap_textview_primarypriceTV);
         secondarypriceTV = (TextView)findViewById(R.id.ap_textview_secondarypriceTV);
-        infoTV = (TextView)findViewById(R.id.ap_textview_infoTV);
-        slider1TV = (TextView)findViewById(R.id.ap_textview_slider1TV);
-        slider2TV = (TextView)findViewById(R.id.ap_textview_slider2TV);
-        slider3TV = (TextView)findViewById(R.id.ap_textview_slider3TV);
-        slider4TV = (TextView)findViewById(R.id.ap_textview_slider4TV);
-        slider5TV = (TextView)findViewById(R.id.ap_textview_slider5TV);
-        priorityTV = (TextView)findViewById(R.id.ap_textview_priorityTV);
-        adddetail = (TextView)findViewById(R.id.ap_textview_adddetail);
+        infoTV = findViewById(R.id.ap_textview_infoTV);
+        slider1TV = findViewById(R.id.ap_textview_slider1TV);
+        slider2TV = findViewById(R.id.ap_textview_slider2TV);
+        slider3TV = findViewById(R.id.ap_textview_slider3TV);
+        slider4TV = findViewById(R.id.ap_textview_slider4TV);
+        slider5TV = findViewById(R.id.ap_textview_slider5TV);
+        priorityTV = findViewById(R.id.ap_textview_priorityTV);
+        adddetail = findViewById(R.id.ap_textview_adddetail);
 
-        nameET = (EditText)findViewById(R.id.ap_edittext_nameET);
-        shortinfoET = (EditText)findViewById(R.id.ap_edittext_shortinfoET);
-        primarypriceET = (EditText)findViewById(R.id.ap_edittext_primarypriceET);
-        secondarypriceET= (EditText)findViewById(R.id.ap_edittext_secondarypriceET);
-        infoET = (EditText)findViewById(R.id.ap_edittext_infoET);
-        priorityET = (EditText)findViewById(R.id.ap_editttext_priorityET);
+        nameET = findViewById(R.id.ap_edittext_nameET);
+        shortinfoET = findViewById(R.id.ap_edittext_shortinfoET);
+        primarypriceET = findViewById(R.id.ap_edittext_primarypriceET);
+        secondarypriceET= findViewById(R.id.ap_edittext_secondarypriceET);
+        infoET = findViewById(R.id.ap_edittext_infoET);
+        priorityET = findViewById(R.id.ap_editttext_priorityET);
 
-        viewpager = (CheckBox)findViewById(R.id.ap_checkbox_viewpager);
-        addspecial = (CheckBox)findViewById(R.id.ap_checkbox_addspecial);
+        viewpager = findViewById(R.id.ap_checkbox_viewpager);
+        addspecial = findViewById(R.id.ap_checkbox_addspecial);
+
+        detailcontainer = findViewById(R.id.ap_layout_detailcontainer);
 
         ivs[0] = slider1IV;
         ivs[1] = slider2IV;
@@ -157,6 +161,10 @@ public class AddProduct extends LinearLayout {
     }
     public CheckBox getAddspecial(){
         return this.addspecial;
+    }
+
+    public LinearLayout getDetailcontainer(){
+        return this.detailcontainer;
     }
 
 

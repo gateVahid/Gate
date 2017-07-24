@@ -25,7 +25,7 @@ public class DialogDetail extends Dialog {
         super(c);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.dialoge_passchange);
+        setContentView(R.layout.dialog_detail);
         getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         setCanceledOnTouchOutside(true);
