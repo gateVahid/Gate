@@ -462,6 +462,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
                         android:drawableRight="@drawable/ic_plus_grey"
                         android:gravity="center_vertical|start"
                         android:padding="8dp"
