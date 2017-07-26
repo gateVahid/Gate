@@ -19,7 +19,7 @@ public class DetailViewEditable extends LinearLayout {
 
     public DetailViewEditable(Context c) {
         super(c);
-        LayoutInflater.from(c).inflate(R.layout.detailview,this);
+        LayoutInflater.from(c).inflate(R.layout.detailview_editable,this);
         setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 

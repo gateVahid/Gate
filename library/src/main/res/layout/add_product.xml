@@ -459,11 +459,11 @@
 
                     <TextView
                         android:id="@+id/ap_textview_adddetail"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:drawableRight="@drawable/ic_plus_grey"
-                        android:gravity="center_vertical|end"
+                        android:gravity="center_vertical|start"
                         android:padding="8dp"
                         android:text="اضافه کردن جزییات"
                         android:textSize="18sp" />
