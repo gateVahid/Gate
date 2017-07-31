@@ -8,7 +8,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1">
 
         <LinearLayout
@@ -48,7 +48,9 @@
                 android:layout_height="1px"
                 android:layout_weight="1"
                 android:background="@color/divider"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,13 +65,11 @@
                     android:gravity="bottom|right"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/headview_icon_mark"
+                    <CheckBox
+                        android:id="@+id/headview_checkbox_mark"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:padding="4dp"
-                        android:src="@drawable/ic_square" />
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
 
                     <ImageView
                         android:id="@+id/headview_icon_addcart"
@@ -87,18 +87,26 @@
                         android:padding="4dp"
                         android:src="@drawable/ic_like_blank" />
 
+                    <TextView
+                        android:id="@+id/headview_textview_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:text="274" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/headview_textview_secondaryprice"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="قیمت قبلی"
@@ -106,7 +114,7 @@
 
                     <TextView
                         android:id="@+id/headview_textview_primaryprice"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"

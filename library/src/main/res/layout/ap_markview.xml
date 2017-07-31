@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white_background"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/apmv_checkbox_addspecial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="اضافه کردن به محصولات ویژه"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/apmv_checkbox_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="محصول منتخب اسلایدر"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/apmv_textview_priorityTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="اولویت"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/apmv_editttext_priorityET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/apmv_imageview_viewpagerpic"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_addphoto_dark" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

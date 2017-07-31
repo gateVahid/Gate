@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class Headview extends LinearLayout {
 
-    TextView   name,info,primaryprice,secondaryprice;
+    TextView   name,info,primaryprice,secondaryprice,counter;
     ImageView  like,addcart,mark;
 
     public Headview (Context c){
@@ -27,13 +27,14 @@ public class Headview extends LinearLayout {
 
 
 
-        name=(TextView)findViewById(R.id.headview_textview_name);
-        info=(TextView)findViewById(R.id.headview_textview_info);
-        primaryprice=(TextView)findViewById(R.id.headview_textview_primaryprice);
-        secondaryprice=(TextView)findViewById(R.id.headview_textview_secondaryprice);
-        like=(ImageView)findViewById(R.id.headview_icon_like);
-        addcart=(ImageView)findViewById(R.id.headview_icon_addcart);
-        mark=(ImageView)findViewById(R.id.headview_icon_mark);
+        name=findViewById(R.id.headview_textview_name);
+        info=findViewById(R.id.headview_textview_info);
+        primaryprice=findViewById(R.id.headview_textview_primaryprice);
+        secondaryprice=findViewById(R.id.headview_textview_secondaryprice);
+        counter=findViewById(R.id.headview_textview_counter);
+        like=findViewById(R.id.headview_icon_like);
+        addcart=findViewById(R.id.headview_icon_addcart);
+        mark=findViewById(R.id.headview_icon_mark);
 
     }
 
@@ -42,6 +43,9 @@ public class Headview extends LinearLayout {
     }
     public TextView getInfo(){
         return this.info;
+    }
+    public TextView getCounter(){
+        return this.counter;
     }
     public TextView getPrimaryprice(){
         return this.primaryprice;
@@ -59,9 +63,10 @@ public class Headview extends LinearLayout {
         return this.mark;
     }
 
-    public void setliked(boolean b){
-        if (b)
+    public void isliked(boolean b){
+        if (b) {
             like.setImageResource(R.drawable.ic_like_filled);
+            like.setColorFilter(getResources().getColor(R.color.colorRed));        }
         else
             like.setImageResource(R.drawable.ic_like_blank);
 
@@ -74,5 +79,6 @@ public class Headview extends LinearLayout {
         primaryprice.setTypeface(tf);
         secondaryprice.setTypeface(tf);
         info.setTypeface(tf);
+        counter.setTypeface(tf);
     }
 }

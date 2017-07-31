@@ -31,7 +31,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/lcardview_textview_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="امیر الکل"
@@ -39,7 +39,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/lcardview_textview_info"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -69,7 +69,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView10"
+                            android:id="@+id/lcardview_textview_secondaryprice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
@@ -77,7 +77,7 @@
                             android:textColor="@android:color/holo_red_dark" />
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/lcardview_textview_primaryprice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
@@ -92,16 +92,11 @@
 
             </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="120dp"
-                android:layout_height="150dp">
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/gate_grey_vector" />
-            </FrameLayout>
+            <ImageView
+                android:id="@+id/lcardview_imageview_pic"
+                android:layout_width="144dp"
+                android:layout_height="160dp"
+                android:src="@drawable/gate_grey_vector" />
 
         </LinearLayout>
 
