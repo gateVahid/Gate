@@ -34,7 +34,7 @@ public class Headview extends LinearLayout {
         counter=findViewById(R.id.headview_textview_counter);
         like=findViewById(R.id.headview_icon_like);
         addcart=findViewById(R.id.headview_icon_addcart);
-        mark=findViewById(R.id.headview_icon_mark);
+        mark=findViewById(R.id.headview_checkbox_mark);
 
     }
 

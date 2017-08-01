@@ -107,6 +107,7 @@
                         android:id="@+id/headview_textview_secondaryprice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
                         android:text="قیمت قبلی"
                         android:textColor="@android:color/holo_red_dark" />
@@ -115,6 +116,7 @@
                         android:id="@+id/headview_textview_primaryprice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"
                         android:text="قیمت با تخفیف"
